@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg text-white position-fixed w-100">
+        <div class="container">
+            <a href="./index.html">
+                <img src="./img/Logo.png" alt="">
+            </a>
+          <!-- mobile only -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- / -->
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./products.html">Products</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="./login.html" class="btn bg-primary-200 text-white me-3 px-4" type="submit">Login</a>
+              <a href="./register.html" class="btn text-white border-white px-3" type="submit">Register</a>
+            </div>
+          </div> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./products.html">Products</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="./cart.html" class="text-white me-3 bg-primary-200 rounded px-3 d-flex py-1" type="submit">
+                    <iconify-icon icon="clarity:shopping-cart-solid" width="24" class="d-flex align-items-center"></iconify-icon>
+                    <p class="mb-1 ms-2 px-2 bg-secondary-100 rounded cart-items">1</p>
+                </a>
+                <a href="./profile.html" class="btn text-white border-white px-3" type="submit">My account</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start header -->
+    <header class="home">
+        <img src="./img/top.png" class="position-absolute top-img" alt="">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <h1>
+                        The wrold’s largest digital products store
+                    </h1>
+                    <h5 class="fw-normal mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus euismod sed pellentesque euismod.
+                    </h5>
+                    <form class="d-flex mt-5 w-65" role="search">
+                        <input class="form-control me-2 bg-secondary-200 border-0 py-2 text-white" type="search" placeholder="Search products" aria-label="Search">
+                        <button class="btn bg-primary-200 text-white px-3" type="submit">Search</button>
+                    </form>                
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="./img/header.png" class="w-100 header-img" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start categories -->
+    <div class="container py-5">
+        <div class="title">
+            <h4 class="fw-bold">Browse Popular Categories</h4>
+            <p class="w-25">Find over 7000 website templates and themes.</p>
+        </div>
+        <div class="mt-5 row">
+            <div class="col-lg-3 my-2 col-md-6 col-sm-12">
+                <div class="bg-primary-200 px-4 py-4 rounded category-card">
+                    <iconify-icon icon="simple-icons:paloaltosoftware" width="50" class="d-flex justify-content-center"></iconify-icon>
+                    <h5 class="mb-0 text-center mt-4">Softwares</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 my-2 col-md-6 col-sm-12">
+                <div class="bg-primary-200 px-4 py-4 rounded category-card">
+                    <iconify-icon icon="simple-icons:paloaltosoftware" width="50" class="d-flex justify-content-center"></iconify-icon>
+                    <h5 class="mb-0 text-center mt-4">Softwares</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 my-2 col-md-6 col-sm-12">
+                <div class="bg-primary-200 px-4 py-4 rounded category-card">
+                    <iconify-icon icon="simple-icons:paloaltosoftware" width="50" class="d-flex justify-content-center"></iconify-icon>
+                    <h5 class="mb-0 text-center mt-4">Softwares</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 my-2 col-md-6 col-sm-12">
+                <div class="bg-primary-200 px-4 py-4 rounded category-card">
+                    <iconify-icon icon="simple-icons:paloaltosoftware" width="50" class="d-flex justify-content-center"></iconify-icon>
+                    <h5 class="mb-0 text-center mt-4">Softwares</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end categories -->
+
+    <!-- start trending markets-->
+    <div class="py-5 trending bg-main-200">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end sm-block">
+                <div class="title">
+                    <h4 class="fw-bold w-65">Trending Landmark Themes</h4>
+                    <p class="">Find over 7000 website templates and themes.</p>
+                </div>
+                <div>
+                    <a href="products.html" class="btn bg-primary-200 px-4 text-white">Explore all</a>
+                </div>
+            </div>
+            <div class="mt-3 row">
+                <!--product-->
+                <div class="col-lg-4 my-3">
+                    <div class="bg-secondary-100 rounded p-3 d-flex card-box">
+                        <div class="img-box w-35">
+                            <img src="./img/1.jpg" alt="" class="w-100 h-100 rounded">
+                        </div>
+                        <div class="text-box ms-3 my-auto w-65">
+                            <h5>
+                                <a href="product-details.html">Product title</a>
+                            </h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                                <h5 class="fw-bold text-primary-200">$13</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--product-->
+                <div class="col-lg-4 my-3">
+                    <div class="bg-secondary-100 rounded p-3 d-flex card-box">
+                        <div class="img-box w-35">
+                            <img src="./img/2.jpg" alt="" class="w-100 h-100 rounded">
+                        </div>
+                        <div class="text-box ms-3 my-auto w-65">
+                            <h5>
+                                <a href="product-details.html">Product title</a>
+                            </h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                                <h5 class="fw-bold text-primary-200">$13</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--product-->
+                <div class="col-lg-4 my-3">
+                    <div class="bg-secondary-100 rounded p-3 d-flex card-box">
+                        <div class="img-box w-35">
+                            <img src="./img/3.jpg" alt="" class="w-100 h-100 rounded">
+                        </div>
+                        <div class="text-box ms-3 my-auto w-65">
+                            <h5>
+                                <a href="product-details.html">Product title</a>
+                            </h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                                <h5 class="fw-bold text-primary-200">$13</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--product-->
+                <div class="col-lg-4 my-3">
+                    <div class="bg-secondary-100 rounded p-3 d-flex card-box">
+                        <div class="img-box w-35">
+                            <img src="./img/4.jpg" alt="" class="w-100 h-100 rounded">
+                        </div>
+                        <div class="text-box ms-3 my-auto w-65">
+                            <h5>
+                                <a href="product-details.html">Product title</a>
+                            </h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                                <h5 class="fw-bold text-primary-200">$13</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--product-->
+                <div class="col-lg-4 my-3">
+                    <div class="bg-secondary-100 rounded p-3 d-flex card-box">
+                        <div class="img-box w-35">
+                            <img src="./img/5.jpg" alt="" class="w-100 h-100 rounded">
+                        </div>
+                        <div class="text-box ms-3 my-auto w-65">
+                            <h5>
+                                <a href="product-details.html">Product title</a>
+                            </h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                                <h5 class="fw-bold text-primary-200">$13</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--product-->
+                <div class="col-lg-4 my-3">
+                    <div class="bg-secondary-100 rounded p-3 d-flex card-box">
+                        <div class="img-box w-35">
+                            <img src="./img/6.jpg" alt="" class="w-100 h-100 rounded">
+                        </div>
+                        <div class="text-box ms-3 my-auto w-65">
+                            <h5>
+                                <a href="product-details.html">Product title</a>
+                            </h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                                <h5 class="fw-bold text-primary-200">$13</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end trending markets-->
+
+    <!-- start join-->
+    <div class="bg-primary-200 py-5 position-relative join">
+        <img src="./img/top-join.svg" class="position-absolute join-img" alt="" >
+        <div class="container">
+            <div class="mx-auto text-center text-box">
+                <h4 class="fw-bold">You wan to join our community</h4>
+                <p class="mt-3 w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                <form class="d-flex mt-4 w-35 mx-auto">
+                    <input class="form-control me-2 bg-white border-0 py-2" type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn bg-primary-100 text-white px-3" type="submit">subscribe</button>
+                </form>  
+            </div>
+        </div>
+    </div>
+    <!-- end join-->
+
+    <!-- start sponsors -->
+    <div class="sponsors py-3 bg-secondary-100 d-flex flex-wrap justify-content-center align-items-center">
+        <img src="./img/shopify.png" alt="" class="sponsor mx-4">
+        <img src="./img/Python.png" alt="" class="sponsor mx-4">
+    </div>
+    <!-- end sponsors --> 
+    
+    <!-- start testimonials -->   
+    <div class="py-5 testimonials container">
+        <div class="row align-items-center flex-sm-inverse">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="w-75 mx-auto d-block">
+                    <div class="title position-relative">
+                        <img src="./img/abs.png" class="position-absolute" alt="">
+                        <h2>What our customers says about us</h2>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                         <!--testimonial-->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <p class="mt-3">1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                          </div>
+                          <!--testimonial-->
+                          <div class="carousel-item">
+                              <p class="mt-3">2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                          </div>
+                          <!--testimonial-->
+                          <div class="carousel-item">
+                              <p class="mt-3">3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla habitasse malesuada volutpat.</p>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="./img/reviews.png" alt="" class="w-75 mx-auto d-block">
+            </div>
+        </div>
+    </div>
+    <!-- end testimonials -->   
+
+    <!-- start -->
+    <div class="py-5 container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 my-2 col-sm-12 position-relative">
+                <h3 class="download-text">Ready to start download</h3>
+                <a href="" class="btn bg-primary-200 px-3 text-white mt-4 position-absolute bottom-0 download-btn">Download files</a>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2 col-sm-12">
+                <a href="product-details.html" class="download-img">
+                    <img src="./img/1.jpg" alt="" class="w-100 rounded">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2 col-sm-12">
+                <a href="product-details.html" class="download-img">
+                    <img src="./img/1.jpg" alt="" class="w-100 rounded">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2 col-sm-12">
+                <a href="product-details.html" class="download-img">
+                    <img src="./img/1.jpg" alt="" class="w-100 rounded">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="py-2 bg-secondary-100 text-primary-200 d-flex justify-content-center align-items-center">
+            <!--social media-->
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="ant-design:instagram-filled" width="40"></iconify-icon>
+            </a>
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="akar-icons:facebook-fill" width="40"></iconify-icon>
+            </a>
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="ant-design:twitter-circle-filled" width="40"></iconify-icon>
+            </a>
+        </div>
+        <div class="bg-primary-200 text-white fw-bold py-2">
+            <p class="mb-0 text-center">@copyrights reserved</p>
+        </div>
+    </footer>
+    
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>All products</title>
+</head>
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg text-white position-fixed w-100">
+        <div class="container">
+            <a href="./index.html">
+                <img src="./img/Logo.png" alt="">
+            </a>
+          <!-- mobile only -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- / -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./products.html">Products</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="./cart.html" class="text-white me-3 bg-primary-200 rounded px-3 d-flex py-1" type="submit">
+                    <iconify-icon icon="clarity:shopping-cart-solid" width="24" class="d-flex align-items-center"></iconify-icon>
+                    <p class="mb-1 ms-2 px-2 bg-secondary-100 rounded cart-items">1</p>
+                </a>
+                <a href="./profile.html" class="btn text-white border-white px-3" type="submit">My account</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <header class="bg-primary-300 inner-page d-flex justify-content-center align-items-center position-relative">
+        <div class="position-absolute blur-img"></div>
+        <h1>Shop</h1>
+    </header>
+
+    <section class="products container">
+        <div class="button-group filters-button-group d-flex justify-content-center mt-5 bg-secondary-100 py-2 rounded">
+            <button class="btn text-white mx-3 px-5 is-checked" data-filter="*">All</button>
+            <button class="btn text-white mx-3 px-5" data-filter='[data-category="category1"]'>Category 1</button>
+            <button class="btn text-white mx-3 px-5" data-filter='[data-category="category2"]'>category 2</button>
+            <button class="btn text-white mx-3 px-5" data-filter='[data-category="category3"]'>category 3</button>
+        </div>
+        <div class="items mt-5 overflow-hidden">
+            <div class="row">
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category1">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/1.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 1</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category1">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/2.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 1</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category2">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/3.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 2</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category2">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/4.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 2</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category2">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/5.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 2</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category3">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/6.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 3</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category1">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/1.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 1</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category2">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/1.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 2</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--product-->
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2 element-item " data-category="category3">
+                    <div class="bg-secondary-100 rounded p-2 position-relative">
+                        <div class="img-box position-relative">
+                            <img src="./img/1.jpg" class="w-100 produt-img-h" alt="">
+                            <div class="text-hover position-absolute">
+                                <div>
+                                    <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                    <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box px-2 py-1 mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="tag px-3 py-1 text-center rounded bg-primary-200">category 3</div>
+                                <h5 class="fw-bold">$13</h5>
+                            </div>
+                            <h5 class="mt-2 text-white fw-bold">
+                                <a href="product-details.html" >Product name here</a>
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" class="mt-4 d-flex">
+                <ul class="pagination mx-auto">
+                  <li class="page-item">
+                    <a class="page-link bg-secondary-100 border-0" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link bg-secondary-100 border-0 active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link bg-secondary-100 border-0" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link bg-secondary-100 border-0" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link bg-secondary-100 border-0" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+    </section>
+      
+
+    <footer>
+        <div class="py-2 bg-secondary-100 text-primary-200 d-flex justify-content-center align-items-center">
+            <!--social media-->
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="ant-design:instagram-filled" width="40"></iconify-icon>
+            </a>
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="akar-icons:facebook-fill" width="40"></iconify-icon>
+            </a>
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="ant-design:twitter-circle-filled" width="40"></iconify-icon>
+            </a>
+        </div>
+        <div class="bg-primary-200 text-white fw-bold py-2">
+            <p class="mb-0 text-center">@copyrights reserved</p>
+        </div>
+    </footer>
+
+
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+      <script src="./script/script.js"></script>
+</body>
+</html>

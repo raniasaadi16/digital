@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Product details</title>
+</head>
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg text-white position-fixed w-100">
+        <div class="container">
+            <a href="./index.html">
+                <img src="./img/Logo.png" alt="">
+            </a>
+          <!-- mobile only -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- / -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./products.html">Products</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="./cart.html" class="text-white me-3 bg-primary-200 rounded px-3 d-flex py-1" type="submit">
+                    <iconify-icon icon="clarity:shopping-cart-solid" width="24" class="d-flex align-items-center"></iconify-icon>
+                    <p class="mb-1 ms-2 px-2 bg-secondary-100 rounded cart-items">1</p>
+                </a>
+                <a href="./profile.html" class="btn text-white border-white px-3" type="submit">My account</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <header class="bg-primary-300 inner-page d-flex justify-content-center align-items-center position-relative">
+        <div class="position-absolute blur-img"></div>
+        <h1>Product Name</h1>
+    </header>
+      
+    <section class="py-5 container product-details">
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-12 my-2">
+                <div class="bg-secondary-100 p-4 rounded">
+                    <div class="img-box">
+                        <img src="./img/1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="mt-3">
+                        <ul class="nav nav-tabs mx-0 px-0" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link text-white active ps-0" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link text-white" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">Reviews</button>
+                            </li>
+                        
+                          </ul>
+                          <div class="tab-content mt-4" id="myTabContent">
+                            <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                                <div>
+                                    <h5 class="fw-bold">product details</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum senectus odio eu in tristique velit sagittis elementum massa. Arcu nibh bibendum amet quis nec pretium ac. In urna erat curabitur ac. Id diam nisl ullamcorper commodo pretium.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum senectus odio eu in tristique velit sagittis elementum massa. Arcu nibh bibendum amet quis nec pretium ac. In urna erat curabitur ac. Id diam nisl ullamcorper commodo pretium.
+                                    </p>
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="fw-bold">product features</h5>
+                                    <ul class="mt-3">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Reviews area-->
+                            <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+                                <div>
+                                    <h5 class="fw-bold">Reviews</h5>
+                                    <!--Reviews-->
+                                    <div class="mt-3">
+                                        <!--Review-->
+                                        <div class="d-flex xs-block">
+                                            <img src="./img/review.jpg" class="rounded review-img" width="70" height="70" alt="">
+                                            <div class="ms-3 xs-mx-0">
+                                                <p class="mb-0 text-primary-100">5 satrs</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum senectus odio eu in tristique velit sagittis elementum massa. Arcu nibh bibendum amet quis nec pretium ac.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--add review-->
+                                    <div class="mt-3 add-reviews">
+                                        <h5 class="fw-bold">Add your review</h5>
+                                        <form action="" class="d-flex justify-content-between align-items-end xs-block">
+                                            <div class="text-box my-1">
+                                                <label for="FormControlInput1">Your review</label>
+                                                <input type="text" class="form-control mt-1" id="FormControlInput1" placeholder="your review" required>
+                                            </div>
+                                            <div class="ms-3 rating-box my-1 xs-mx-0">
+                                                <label for="FormControlInput2">rating</label>
+                                                <input type="number" class="form-control mt-1" id="FormControlInput2" max="5" min="1" value="1" >
+                                            </div>
+                                            <button type="submit" class="btn bg-primary-200 ms-3 xs-mx-0 text-white">Add</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5 my-2">
+                <div class="bg-secondary-100 p-4 rounded">
+                    <h3 class="text-center fw-bold">$35</h3>
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center rounded py-2 px-4 bg-primary-50 my-2">
+                            <iconify-icon icon="clarity:shopping-cart-solid" width="22" flip="horizontal" class="text-primary-100"></iconify-icon>
+                            <h5 class="text-primary-100 ms-4 mb-0"><span>50</span> Sales</h5>
+                        </div>
+                        <div class="d-flex align-items-center rounded py-2 px-4 bg-primary-50 my-2">
+                            <iconify-icon icon="ant-design:star-filled" width="22" flip="horizontal" class="text-primary-100"></iconify-icon>
+                            <h5 class="text-primary-100 ms-4 mb-0"><span>10</span> Ratings</h5>
+                        </div>
+                        <div class="d-flex align-items-center rounded py-2 px-4 bg-primary-50 my-2">
+                            <iconify-icon icon="carbon:view-filled" width="22" flip="horizontal" class="text-primary-100"></iconify-icon>
+                            <h5 class="text-primary-100 ms-4 mb-0"><span>152</span> Views</h5>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center my-2">
+                            <iconify-icon icon="akar-icons:circle-check-fill" width="22" class="text-success"></iconify-icon>
+                            <h5 class="fw-normal mb-0 ms-3">Free support</h5>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <iconify-icon icon="akar-icons:circle-check-fill" width="22" class="text-success"></iconify-icon>
+                            <h5 class="fw-normal mb-0 ms-3">High quality</h5>
+                        </div>
+                        <div class="d-flex align-items-center my-2">
+                            <iconify-icon icon="akar-icons:circle-check-fill" width="22" class="text-success"></iconify-icon>
+                            <h5 class="fw-normal mb-0 ms-3">Future updates</h5>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn border border-white text-white w-100 py-2 cart-btn my-2" id="AddToCart">Add to cart</button>
+                        <a href="" target="_blank" class="btn border border-white text-white w-100 py-2 cart-btn my-2">Preview project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--related products-->
+    <section class="container mt-4 products">
+        <h3 class="fw-bold">Related products</h3>
+        <div class="row mt-4">
+            <!--product-->
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 ">
+                <div class="bg-secondary-100 rounded p-2 position-relative">
+                    <div class="img-box position-relative">
+                        <img src="./img/1.jpg" class="w-100 produt-img-h" alt="">
+                        <div class="text-hover position-absolute">
+                            <div>
+                                <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-box px-2 py-1 mt-2">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                            <h5 class="fw-bold">$13</h5>
+                        </div>
+                        <h5 class="mt-2 text-white fw-bold">
+                            <a href="product-details.html" >Product name here</a>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                    </div>
+                </div>
+            </div>
+             <!--product-->
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 ">
+                <div class="bg-secondary-100 rounded p-2 position-relative">
+                    <div class="img-box position-relative">
+                        <img src="./img/2.jpg" class="w-100 produt-img-h" alt="">
+                        <div class="text-hover position-absolute">
+                            <div>
+                                <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-box px-2 py-1 mt-2">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                            <h5 class="fw-bold">$13</h5>
+                        </div>
+                        <h5 class="mt-2 text-white fw-bold">
+                            <a href="product-details.html" >Product name here</a>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                    </div>
+                </div>
+            </div>
+             <!--product-->
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 ">
+                <div class="bg-secondary-100 rounded p-2 position-relative">
+                    <div class="img-box position-relative">
+                        <img src="./img/3.jpg" class="w-100 produt-img-h" alt="">
+                        <div class="text-hover position-absolute">
+                            <div>
+                                <a href="product-details.html" class="px-4 fw-bold text-white border border-white py-2 rounded text-center my-2 d-block">View details</a>
+                                <a href="checkout.html" class="px-4 fw-bold border border-white py-2 rounded text-center bg-white text-primary-200 d-block my-2">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-box px-2 py-1 mt-2">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="tag px-3 py-1 text-center rounded bg-primary-200">category</div>
+                            <h5 class="fw-bold">$13</h5>
+                        </div>
+                        <h5 class="mt-2 text-white fw-bold">
+                            <a href="product-details.html" >Product name here</a>
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac semper bibendum in nunc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="py-2 bg-secondary-100 text-primary-200 d-flex justify-content-center align-items-center">
+            <!--social media-->
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="ant-design:instagram-filled" width="40"></iconify-icon>
+            </a>
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="akar-icons:facebook-fill" width="40"></iconify-icon>
+            </a>
+            <a href="" class="mx-4" target="_blank">
+                <iconify-icon icon="ant-design:twitter-circle-filled" width="40"></iconify-icon>
+            </a>
+        </div>
+        <div class="bg-primary-200 text-white fw-bold py-2">
+            <p class="mb-0 text-center">@copyrights reserved</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+      <script src="./script/script.js"></script>
+</body>
+</html>
